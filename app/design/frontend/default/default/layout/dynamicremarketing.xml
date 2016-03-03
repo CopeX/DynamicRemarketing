@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	
+	<!-- Conversion code for every page -->
+	<default>
+		<reference name="before_body_end">
+			<block ifconfig="dynamicremarketing/general/enable" type="copex_dynamicremarketing/script" name="copex.dynamic.remarketing" as="copex.dynamic.remarketing">
+				<action method="setPageType"><type>other</type></action>
+				<action method="setTemplate"><template>copex/dynamicremarketing/script.phtml</template></action>
+			</block>
+		</reference>
+	</default>
+	
+	<!-- Conversion code for homepage -->
+	<cms_index_index>
+		<reference name="copex.dynamic.remarketing">
+			<action method="setPageType"><type>home</type></action>
+		</reference>
+	</cms_index_index>
+	
+	<!-- Conversion code for searchresults -->
+	<catalogsearch_result_index>
+		<reference name="copex.dynamic.remarketing">
+			<action method="setPageType"><type>searchresults</type></action>
+		</reference>
+	</catalogsearch_result_index>
+	
+	<catalogsearch_advanced_result>
+		<reference name="copex.dynamic.remarketing">
+			<action method="setPageType"><type>searchresults</type></action>
+		</reference>
+	</catalogsearch_advanced_result>
+	
+	<!-- Conversion code for category pages -->
+	<catalog_category_default>
+		<reference name="copex.dynamic.remarketing">
+			<action method="setPageType"><type>category</type></action>
+		</reference>
+	</catalog_category_default>
+	
+	<catalog_category_layered>
+		<reference name="copex.dynamic.remarketing">
+			<action method="setPageType"><type>category</type></action>
+		</reference>
+	</catalog_category_layered>
+	
+	<!-- Converison code for product detail pages -->
+	<catalog_product_view>
+		<reference name="copex.dynamic.remarketing">
+			<action method="setPageType"><type>product</type></action>
+			<action method="setUseProductData"><bool>1</bool></action>
+		</reference>
+	</catalog_product_view>
+	
+	<!-- Conversion code for cart page -->
+	<checkout_cart_index>
+		<reference name="copex.dynamic.remarketing">
+			<action method="setPageType"><type>cart</type></action>
+			<action method="setUseProductData"><bool>1</bool></action>
+		</reference>
+	</checkout_cart_index>
+	
+	<!-- Conversion code for purchase page -->
+	<checkout_onepage_success>
+		<reference name="copex.dynamic.remarketing">
+			<action method="setPageType"><type>purchase</type></action>
+			<action method="setUseProductData"><bool>1</bool></action>
+		</reference>
+	</checkout_onepage_success>
+</layout>

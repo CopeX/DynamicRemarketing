@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<config>
+	<sections>
+		<google>
+			<groups>
+				<dynamicremarketing>
+					<label>Google Dynamic Remarketing</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>20</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enable translate="label comment">
+							<label>Enable</label>
+							<comment><![CDATA[Enable to activate Google Dynamic Remarketing]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable>
+						<enable_advanced translate="label comment">
+							<label>Enable advanced tagging</label>
+							<comment><![CDATA[Read more about advanced tagging <a href="https://support.google.com/adwords/answer/3103357?hl=en">here</a>.<br/>Adds following values: ecomm_pvalue, ecomm_category, ecomm_quantity, hasaccount]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable_advanced>
+						<conversion_id translate="label comment">
+							<label>Google Conversion ID</label>
+							<comment><![CDATA[Obtain conversion ID from <a href="http://www.google.com/ads/adwords/">Google Adwords</a>]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</conversion_id>
+						<attribute_key translate="label comment">
+							<label>Product ID key</label>
+							<comment><![CDATA[Must match the Product ID from the Google Merchant Center feed.]]></comment>
+							<frontend_type>select</frontend_type>
+							<source_model>copex_dynamicremarketing/system_config_source_attributes</source_model>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</attribute_key>
+					</fields>
+				</dynamicremarketing>
+			</groups>
+		</google>
+	</sections>
+</config>

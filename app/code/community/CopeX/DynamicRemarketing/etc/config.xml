@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<config>
+	
+	<modules>
+		<CopeX_DynamicRemarketing>
+			<version>1.0.1</version>
+		</CopeX_DynamicRemarketing>
+	</modules>
+	
+	<global>
+		<helpers>
+			<copex_dynamicremarketing>
+				<class>CopeX_DynamicRemarketing_Helper</class>
+			</copex_dynamicremarketing>
+		</helpers>
+		<blocks>
+			<copex_dynamicremarketing>
+				<class>CopeX_DynamicRemarketing_Block</class>
+			</copex_dynamicremarketing>
+		</blocks>
+		<models>
+			<copex_dynamicremarketing>
+				<class>CopeX_DynamicRemarketing_Model</class>
+			</copex_dynamicremarketing>
+		</models>
+	</global>
+	
+	<frontend>
+		<layout>
+			<updates>
+				<copex_dynamicremarketing>
+					<file>dynamicremarketing.xml</file>
+				</copex_dynamicremarketing>
+			</updates>
+		</layout>
+	</frontend>
+	
+	<!--Default config params -->
+	<default>
+		<dynamicremarketing>
+			<general>
+				<enable>false</enable>
+				<js_remarketing_only>1</js_remarketing_only>
+				<attribute_key>sku</attribute_key>
+			</general>
+		</dynamicremarketing>
+	</default>
+	
+</config>
