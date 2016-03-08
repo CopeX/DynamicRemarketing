@@ -1,0 +1,15 @@
+{
+    "name": "CopeX/DynamicRemarketing",
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "description": "Add the google dynamic remarketing tags to the body",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"Andreas Pointner",
+            "email":"andreas.pointner@copex.io"
+        }
+    ]
+}
