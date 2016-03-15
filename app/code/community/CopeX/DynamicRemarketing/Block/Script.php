@@ -7,7 +7,7 @@
  * @package 	CopeX_DynamicRemarketing
  * @author		Adwise Internetmarketing & copex.io
  * @copyright  	Copyright (c) 2013 Adwise Internetmarketing under GPL and CopeX.io
- * @version 	1.0.1
+ * @version 	1.0.2
  * 
  */
 Class CopeX_DynamicRemarketing_Block_Script extends Mage_Core_Block_Template{

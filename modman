@@ -5,5 +5,5 @@ app/code/community/CopeX/DynamicRemarketing            app/code/community/CopeX/
 app/etc/modules/CopeX_DynamicRemarketing.xml            app/etc/modules/CopeX_DynamicRemarketing.xml
 
 # app/design
-app/design/frontend/default/default/layout/dynamicremarketing.xml            app/design/frontend/default/default/layout/dynamicremarketing.xml
-app/design/frontend/default/default/template/copex/dynamicremarketing/script.phtml            app/design/frontend/default/default/template/copex/dynamicremarketing/script.phtml
+app/design/frontend/base/default/layout/dynamicremarketing.xml            app/design/frontend/base/default/layout/dynamicremarketing.xml
+app/design/frontend/base/default/template/copex/dynamicremarketing/script.phtml            app/design/frontend/base/default/template/copex/dynamicremarketing/script.phtml
