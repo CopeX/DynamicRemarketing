@@ -46,11 +46,11 @@ Class CopeX_DynamicRemarketing_Helper_Data extends Mage_Core_Helper_Abstract{
 	
 	/**
 	 * Returns a javascript object with unquoted keys
-	 * Thanks to Saggy for this neat solution
+	 * Also double quotes are not allowed so we replace them with single ones
 	 * @param array $data
 	 */
 	public function getJsObjectString(array $data){
-		return preg_replace('/"([^"]+)"s*:s*/', '$1:', json_encode($data));
+		return str_replace('"',"'",preg_replace('/"([^"]+)"s*:s*/', '$1:', json_encode($data)) );
 	}
 	 
 }

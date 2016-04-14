@@ -6,7 +6,7 @@ Original version by Adwise and adopted by CopeX.io
 
 Facts
 -----
-- version: 1.0.2
+- version: 1.0.3
 - extension key: CopeX_DynamicRemarketing
 - Composer name: copex/dynamicremarketing
 
